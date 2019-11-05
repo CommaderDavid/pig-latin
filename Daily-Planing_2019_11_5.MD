@@ -30,8 +30,8 @@
 
 #### Please list the names of the projects you worked on today:
 
-*
+* 3.3 Pig Latin
 
 #### Please add a link to GitHub repository to all projects you worked on today:
 
-*
+* https://github.com/CommaderDavid/pig-latin
