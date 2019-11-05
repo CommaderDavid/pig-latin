@@ -9,9 +9,9 @@
 * The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
   * **Input Example**: 3
   * **Output Example**: 3
-* The program adds "ay" to single-letter words beginning with a vowel.
+* The program adds "way" to single-letter words beginning with a vowel.
   * **Input Example**: i
-  * **Output Example**: iay
+  * **Output Example**: iway
 * The program adds "way" to the end of words beginning with a vowel.
   * **Input Example**: Apple
   * **Output Example**: Appleway

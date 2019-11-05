@@ -1,9 +1,14 @@
 // Back end
 var pigTrans = function(words) {
-  // var vowels = ['a', 'e', 'i', 'o', 'u']
-  // var
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+  var returnWord = "";
   if ((/[a-z]/i).test(words)) {
-    return "Word"
+    vowels.forEach(function(vowel) {
+      if (vowel === words) {
+        returnWord = words + "way"
+      }
+    });
+    return returnWord    
   } else {
     return "number"
   }
