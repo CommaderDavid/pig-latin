@@ -3,7 +3,7 @@
 #### By _David Boedigheimer_
 
 ### Description
-
+This website will translate any sentence into pig latin for the user. This website is created with _HTML, CSS, JavaScript, Bootstrap, jQuery,_ and _GitHub._
 
 ### BDD process
 * The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
@@ -24,3 +24,20 @@
 * The programs will move 'qu' if 'qu' is the first two consonants, except with words like 'squeal' since 'qu' don't come first.
   * **Input Example**: Quite
   * **Output Example**: iteQuay
+
+### Setup/Installation Requirements
+* Copy the repository.
+* Open the HTML file in a browser of your choosing.
+* Enter your sentence.
+* Hit Translate and enjoy!
+
+### Known Bugs
+There are no known bugs in this website.
+
+### Contact/Support Information
+If you have any concerns or questions, you may contact me at stealth259@gmail.com
+
+#### License
+This website is licensed under the MIT license.
+
+Copyright (c) 2019 **_David Boedigheimer_**
