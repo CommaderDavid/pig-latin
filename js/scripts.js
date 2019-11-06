@@ -5,14 +5,18 @@ var pigTrans = function(words) {
   var splitSentences = words.split(" ");
 
   splitSentences.forEach(function(splitSentence) {
-    var sentence = splitSentence.split("");
+    console.log(splitSentences, splitSentence);
+    var sentence = splitSentence.toLowerCase().split("");
 
-    if ((/[a-z]/i).test(words)) {
+    if ((/[a-z]/i).test(splitSentence)) {
       for (var i = 0; i < sentence.length; i++) {
         vowels.forEach(function(vowel) {
            if (sentence[i] === vowel) {
              if (i === 0) {
                returnWord.push(sentence.join("") + "way ");
+             } else if (sentence[i] === "u" && sentence[i-1] === "q") {
+               var letters = sentence.splice(0, i+1);
+               returnWord.push(sentence.join("") + letters.join("") + "ay ")
              } else {
                var letters = sentence.splice(0, i);
                returnWord.push(sentence.join("") + letters.join("") + "ay ");
@@ -21,13 +25,13 @@ var pigTrans = function(words) {
            }
         });
       }
-
     } else {
-      return "Not a letter"
+      returnWord.push(splitSentence);
     }
 
   });
-  return returnWord;
+  console.log(returnWord);
+  return returnWord.join(" ");
 }
 // Front end
 $(document).ready(function() {
