@@ -7,16 +7,16 @@ var pigTrans = function(words) {
   if ((/[a-z]/i).test(words)) {
     for (var i = 0; i < sentence.length; i++) {
       vowels.forEach(function(vowel) {
-        //   returnWord = sentence.join("") + "way";
          if (sentence[i] === vowel) {
-           if (true) {
-
+           if (i === 0) {
+             returnWord = sentence.join("") + "way";
+           } else {
+             var letters = sentence.splice(0, i);
+             returnWord = sentence.join("") + letters.join("") + "ay"
+             console.log(returnWord, letters, sentence);
            }
-          var letters = sentence.splice(0, i);
-          returnWord = sentence.join("") + letters.join("") + "ay"
-          console.log(returnWord, letters, sentence);
-          i = sentence.length;
-        }
+           i = sentence.length;
+         }
       });
     }
     return returnWord
